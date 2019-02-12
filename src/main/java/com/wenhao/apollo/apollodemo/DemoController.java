@@ -10,7 +10,7 @@ public class DemoController {
     @Value("${zhangshangconfig:default}")
     private String zhangshanconfig;
 
-    @RequestMapping(" ")
+    @RequestMapping("/getZhangshanconfig")
     public String getZhangshanconfig() {
         return zhangshanconfig;
     }
