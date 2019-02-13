@@ -2,9 +2,8 @@ server:
   port: 8100
 spring:
   application:
-    name: apolloDeno
-app:
-  id: app_mayikt
-# set apollo meta server address, adjust to actual address if necessary
-apollo:
-  meta: http://192.168.2.146:8080
+    name: apolloDemo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.2.146:8080
